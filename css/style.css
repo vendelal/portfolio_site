@@ -162,6 +162,10 @@ a:active .nav {
     color: #68b5ff !important;
 }
 
+.row-nav-xs {
+  margin-top: 70px !important;
+}
+
 ul {
     list-style: none;
 }
@@ -379,12 +383,22 @@ h2.feature-title {
     overflow: scroll;
 }
 
-.selected-button {
+.selected-button, 
+.nu-view-work, .bi-view-work, 
+.sw-view-work, .sa-view-work,
+.ws-view-work {
   display:none;
 }
 
-.view-work {
-  display:none;
+.alert.alert-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    padding-top: 13px;
+    z-index:99999;
 }
 
 
@@ -607,7 +621,64 @@ textarea:valid::-webkit-input-placeholder {
 
 
 
+/* MOBILE STYLES */
 
+@media only screen and (max-width: 768px) {
+
+  .form_style, .form_style input[type="email"] ~ span.validation-text, 
+  .form_style button, .form_style input[type="email"], .form_style input, textarea {
+    width: 95%;
+  }
+  .container {
+    padding-top: 0px !important;
+  }
+  .footer .row>p.small {
+    text-align: center !important;
+  }
+}
+
+
+/* SLIDEOUT */
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+#menu {
+  margin-top: 70px;
+  padding: 0px 15px;
+  background-color: #f7f5f5;
+}
+
+#menu a {
+  color: #7D7D7D;
+  padding: 10px 20px;
+  border-bottom: 1px solid #fff;
+  display: block;
+}
 
 
 

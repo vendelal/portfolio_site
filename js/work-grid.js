@@ -12,14 +12,14 @@ $(document).ready(function(){
 
 		$("#bison-button").mouseenter(
 			function(){
-			$(".work-title").hide();
-			$(".view-work").show();
+			$(".bi-work-title").hide();
+			$(".bi-view-work").show();
 		});
 
 		$("#bison-button").mouseleave(
 			function(){
-			$(".work-title").show();
-			$(".view-work").hide();
+			$(".bi-work-title").show();
+			$(".bi-view-work").hide();
 		});
 
 		$("#northeastern-button").click(
@@ -34,14 +34,14 @@ $(document).ready(function(){
 
 		$("#northeastern-button").mouseenter(
 			function(){
-			$(".work-title").hide();
-			$(".view-work").show();
+			$(".nu-work-title").hide();
+			$(".nu-view-work").show();
 		});
 
 		$("#northeastern-button").mouseleave(
 			function(){
-			$(".work-title").show();
-			$(".view-work").hide();
+			$(".nu-work-title").show();
+			$(".nu-view-work").hide();
 		});
 
 		$("#swea-button").click(
@@ -56,14 +56,14 @@ $(document).ready(function(){
 
 		$("#swea-button").mouseenter(
 			function(){
-			$(".work-title").hide();
-			$(".view-work").show();
+			$(".sw-work-title").hide();
+			$(".sw-view-work").show();
 		});
 
 		$("#swea-button").mouseleave(
 			function(){
-			$(".work-title").show();
-			$(".view-work").hide();
+			$(".sw-work-title").show();
+			$(".sw-view-work").hide();
 		});
 
 		$("#sacc-button").click(
@@ -78,14 +78,14 @@ $(document).ready(function(){
 
 		$("#sacc-button").mouseenter(
 			function(){
-			$(".work-title").hide();
-			$(".view-work").show();
+			$(".sa-work-title").hide();
+			$(".sa-view-work").show();
 		});
 
 		$("#sacc-button").mouseleave(
 			function(){
-			$(".work-title").show();
-			$(".view-work").hide();
+			$(".sa-work-title").show();
+			$(".sa-view-work").hide();
 		});
 
 		$("#wsdev-button").click(
@@ -100,13 +100,13 @@ $(document).ready(function(){
 
 		$("#wsdev-button").mouseenter(
 			function(){
-			$(".work-title").hide();
-			$(".view-work").show();
+			$(".ws-work-title").hide();
+			$(".ws-view-work").show();
 		});
 
 		$("#wsdev-button").mouseleave(
 			function(){
-			$(".work-title").show();
-			$(".view-work").hide();
+			$(".ws-work-title").show();
+			$(".ws-view-work").hide();
 		});
 });

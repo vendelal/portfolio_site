@@ -379,13 +379,13 @@ h2.feature-title {
     overflow: scroll;
 }
 
-.selected-button {
+.selected-button, 
+.nu-view-work, .bi-view-work, 
+.sw-view-work, .sa-view-work,
+.ws-view-work {
   display:none;
 }
 
-.view-work {
-  display:none;
-}
 
 
 
