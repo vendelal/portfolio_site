@@ -554,11 +554,7 @@ textarea:valid::-webkit-input-placeholder {
   align-items: stretch;
 }
 
-.form_style .flex textarea {
-  line-height: 120%;
-}
-
-.form_style button {
+.form_style .button {
   font-family: 'roboto', sans-serif;
   transition: transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), box-shadow 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
   border: none;
@@ -571,36 +567,20 @@ textarea:valid::-webkit-input-placeholder {
   margin: 30px 0 0 17px;
 }
 
-/*a {
-  display: inline-block;
-  width: 100%;
-  margin-top: 50px;
-  text-align: center;
-  font-family: 'roboto', sans-serif;
-  text-decoration: none;
-  color: $base;
-  i {
-    margin-right: 5px;
-  }
-}*/
-.form_style a {
-  width: 42px;
-  height: 42px;
-  border-radius: 50px;
+.form_style .button {
+  width: 400px;
+  height: 30px;
   background: #4cc7e9;
   display: inline-block;
-  margin: 50px calc(50% - 21px);
   white-space: nowrap;
-  padding: 13px;
   box-sizing: border-box;
   color: white;
   transition: all 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
   font-family: Roboto, sans-serif;
   text-decoration: none;
-  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
-.form_style a i {
+.form_style .button i {
   margin-right: 20px;
   transition: margin-right 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
 }

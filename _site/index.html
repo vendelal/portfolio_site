@@ -23,27 +23,36 @@
 
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
 
-    <script type='text/javascript' src='../js/sort.js'></script>
+    <script type='text/javascript' src='js/sort.js'></script>
 
 
   </head>
   <body>
 
-  	<div class="row row-nav" style="background-color:#fff;">
-  		<div class="col-md-9 col-sm-6">
+  	<div class="alert alert-top alert-warning" role="alert">This website is still under construction. Some links may still be empty!</div>
+
+  	<div class="row row-nav hidden-sm hidden-xs" style="background-color:#fff; margin-top: 40px;">
+  		<div class="col-md-10 col-xs-12">
 		    <h1>Vendela Larsson</h1>
 		</div>
-		<div class="col-md-1 col-sm-2 nav" style="text-align:right; margin-top:20px;">
-		    <a style="color:#1e1e1e; font-family:'akkuratregular';" href="index.html">
-		    	Home
-		    </a>
-		</div>
-		<div class="col-md-1 col-sm-2 nav" style="text-align:right; margin-top:20px;">
+		<div class="col-md-1 col-xs-4 nav" style="text-align:right; margin-top:20px;">
 		    <a style="color:#1e1e1e; font-family:'akkuratregular';" href="/work">
 		    	Work
 		    </a>
 		</div>
-		<div class="col-md-1 col-sm-2 nav" style="text-align:right; margin-top:20px;">
+		<div class="col-md-1 col-xs-4 nav" style="text-align:right; margin-top:20px;">
+		    <a style="color:#1e1e1e; font-family:'akkuratregular';" href="/about">
+		    	About
+		    </a>
+		</div>
+	</div>
+
+	
+	<div id="menu">
+		<div class="visible-xs visible-sm hidden-md hidden-lg">
+		    <a style="color:#1e1e1e; font-family:'akkuratregular';" href="/work">
+		    	Work
+		    </a>
 		    <a style="color:#1e1e1e; font-family:'akkuratregular';" href="/about">
 		    	About
 		    </a>
@@ -51,34 +60,16 @@
 	</div>
 
 
-  	<div class="container">
-		<div class="col-md-12 dropdown">
-		 <!--  <button class="sort dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-		    Sort by
-		    <span class="icon-angle-down"></span>
-		  </button> -->
-		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-		    <li>
-		    	<a href="#" class="web">
-		    		Web projects
-		    	</a>
-		    </li>
-		    <li>
-		    	<a href="#" class="design">
-		    		Design projects
-		    	</a>
-		    </li>
-		    <li>
-		    	<a href="#" class="mobile">
-		    		Mobile projects
-		    	</a>
-		    </li>
-		    <li>
-		    	<a href="#" class="ui">
-		    		UI projects
-		    	</a>
-		    </li>
-		  </ul>
+  	<div id="panel" class="container" style="padding-top:120px">
+
+  		<div class="row row-nav-xs visible-xs visible-sm hidden-md hidden-lg" style="background-color:#fff; margin-top: 40px;">
+	  		<div class="col-xs-3 hamburger-menu">
+				<h1 class="icon-menu"></h1>
+			</div>
+	  		<div class="col-xs-9">
+			    <h1>Vendela Larsson</h1>
+			</div>
+			
 		</div>
 
 		<div class="spacer row"></div>
@@ -302,54 +293,19 @@
 				</div>
 			</div>
 
-		<?php
-			$action=$_REQUEST['action'];
-			if ($action=="")    /* display the contact form */
-			    {
-	    ?>
-	    <form class="form_style">
-		  <input name="name" placeholder="Name" type="text"  value="" required>
-		  <input name="email" placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
-		  <span class="validation-text">
-		  	Please enter a valid email address.
-		  </span>
-		  <p class="antispam">
-		  	Leave this empty: <input type="text" name="url" />
-		  </p>
-		  <div class="flex">
-		    <textarea name="message" placeholder="Message" rows="1" required></textarea>
-		  </div>
-		  <button>
-		  	Send
-		  </button>
+		<form action="http://www.bluehost.com/bluemail" enctype="multipart/form-data" method="POST" class="form_style">
+		    <input type="text" name="name" id="name" placeholder="Name" value="" required />
+		    <input type="text" name="email" id="email" placeholder="Email" required />
+		    <textarea name="message" id="message" placeholder="Message" required></textarea>
+
+		    <input type='hidden' name='cgiemail-mailopt' value='sync' />
+		    <input type="hidden" name="sendtoemail" value="hello@vendelalarsson.com" />
+		    <input type="hidden" name="subject" value="VendelaLarsson.com - Contact Form" />
+		    <input type="submit" value="Send Message" class="button form-button-submit" />
 		</form>
 
-		<?php 
-		// if the url field is empty 
-		if(isset($_POST['url']) && $_POST['url'] == ''){
 
-		     // put your email address here     
-		     $youremail = 'vendelalinnea@mac.com';
 
-		     // prepare a "pretty" version of the message
-		     $body = "This is the form that was just submitted:     
-				Name:  $_POST[name]
-				E-Mail: $_POST[email]
-				Message: $_POST[message]"; 
-
-	     // Use the submitters email if they supplied one     
-	     // (and it isn't trying to hack your form).     
-	     // Otherwise send from your email address.     
-
-	     if( $_POST['email'] && !preg_match( "/[\r\n]/", $_POST['email']) ) {
-	         $headers = "From: $_POST[email]";     
-	     } else {
-	         $headers = "From: $youremail"; 
-	     }
-
-	     // finally, send the message     
-	     mail($youremail, 'Contact Form', $body, $headers ); } // otherwise, let the spammer think that they got their message through 
-	     ?>
 			
 			<div class="row">
 				<p class="light small" style="text-align: right;">
@@ -378,4 +334,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script src="slideout/dist/slideout.min.js"></script>
+	<script>
+	  var slideout = new Slideout({
+	        'panel': document.getElementById('panel'),
+	        'menu': document.getElementById('menu'),
+	        'padding': 256,
+	        'tolerance': 70,
+	      });
+
+	      // Toggle button
+	      document.querySelector('.hamburger-menu').addEventListener('click', function() {
+	        slideout.toggle();
+	      });
+	</script>
   </body>
+</html>
