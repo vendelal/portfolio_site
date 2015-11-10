@@ -615,6 +615,10 @@ textarea:valid::-webkit-input-placeholder {
   .footer .row>p.small {
     text-align: center !important;
   }
+  .work {
+    margin-bottom: 20px;
+  }
+
 }
 
 
@@ -659,7 +663,6 @@ textarea:valid::-webkit-input-placeholder {
   border-bottom: 1px solid #fff;
   display: block;
 }
-
 
 
 
