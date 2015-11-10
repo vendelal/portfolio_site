@@ -213,6 +213,7 @@ button.sort {
     padding-left: 20px;
     background: rgba(30, 30, 30, 0.8);
     position: absolute;
+    border-radius: 3px;
     top: 0;
     left: 15px;
     right: 15px;
@@ -367,7 +368,7 @@ h2.feature-title {
 .sharing-next {
     width: 100%;
     background-color: #fff;
-    height: 100px;
+    height: 75px;
     position: fixed;
     bottom: 0px;
 }
