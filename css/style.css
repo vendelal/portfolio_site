@@ -211,7 +211,7 @@ button.sort {
     display: none;
     height: 100%;
     padding-left: 20px;
-    background: rgba(30, 30, 30, 0.8);
+    background: rgba(30, 30, 30, 0.85);
     position: absolute;
     border-radius: 3px;
     top: 0;
@@ -280,6 +280,7 @@ a:hover .title {
 
 .lesser-work-container {
     padding: 15px 65px;
+    text-align: center;
 }
 
 .resume {
@@ -384,8 +385,8 @@ h2.feature-title {
     overflow: scroll;
 }
 
-.selected-button, 
-.nu-view-work, .bi-view-work, 
+.selected-button,
+.nu-view-work, .bi-view-work,
 .sw-view-work, .sa-view-work,
 .ws-view-work {
   display:none;
@@ -402,6 +403,16 @@ h2.feature-title {
     z-index:99999;
 }
 
+.j-plus p {
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.j-plus a img {
+  cursor: pointer;
+}
+
 
 
 
@@ -412,7 +423,7 @@ h2.feature-title {
 
 /* FORM STYLES */
 
-.antispam { 
+.antispam {
   display:none;
 }
 
@@ -606,7 +617,7 @@ textarea:valid::-webkit-input-placeholder {
 
 @media only screen and (max-width: 768px) {
 
-  .form_style, .form_style input[type="email"] ~ span.validation-text, 
+  .form_style, .form_style input[type="email"] ~ span.validation-text,
   .form_style button, .form_style input[type="email"], .form_style input, textarea {
     width: 95%;
   }
