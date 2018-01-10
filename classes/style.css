@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "akkuratbold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ufonts.com_akkurat-bold-opentype-webfont.eot");
+  src: url("../fonts/ufonts.com_akkurat-bold-opentype-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/ufonts.com_akkurat-bold-opentype-webfont.woff2") format("woff2"),
+  url("../fonts/ufonts.com_akkurat-bold-opentype-webfont.woff") format("woff"),
+  url("../fonts/ufonts.com_akkurat-bold-opentype-webfont.ttf") format("truetype"),
+  url("../fonts/ufonts.com_akkurat-bold-opentype-webfont.svg#akkuratbold") format("svg");
+}
+
+@font-face {
+  font-family: "akkurat_lightitalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ufonts.com_akkurat-light-italic-opentype-webfont.eot");
+  src: url("../fonts/ufonts.com_akkurat-light-italic-opentype-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/ufonts.com_akkurat-light-italic-opentype-webfont.woff2") format("woff2"),
+  url("../fonts/ufonts.com_akkurat-light-italic-opentype-webfont.woff") format("woff"),
+  url("../fonts/ufonts.com_akkurat-light-italic-opentype-webfont.ttf") format("truetype"),
+  url("../fonts/ufonts.com_akkurat-light-italic-opentype-webfont.svg#akkurat_lightitalic") format("svg");
+}
+
+@font-face {
+  font-family: "akkurat_lightregular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ufonts.com_akkurat-light-opentype-webfont.eot");
+  src: url("../fonts/ufonts.com_akkurat-light-opentype-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/ufonts.com_akkurat-light-opentype-webfont.woff2") format("woff2"),
+  url("../fonts/ufonts.com_akkurat-light-opentype-webfont.woff") format("woff"),
+  url("../fonts/ufonts.com_akkurat-light-opentype-webfont.ttf") format("truetype"),
+  url("../fonts/ufonts.com_akkurat-light-opentype-webfont.svg#akkurat_lightregular") format("svg");
+}
+
+@font-face {
+  font-family: "akkuratregular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ufonts.com_akkurat-opentype-webfont.eot");
+  src: url("../fonts/ufonts.com_akkurat-opentype-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/ufonts.com_akkurat-opentype-webfont.woff2") format("woff2"),
+  url("../fonts/ufonts.com_akkurat-opentype-webfont.woff") format("woff"),
+  url("../fonts/ufonts.com_akkurat-opentype-webfont.ttf") format("truetype"),
+  url("../fonts/ufonts.com_akkurat-opentype-webfont.svg#akkuratregular") format("svg");
+}
+
+body {
+  color: #000;
+  font-family: "akkuratregular";
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.content {
+  padding: 50px 0;
+}
+
+h1 {
+  font-family: "akkuratbold";
+  font-size: 24px;
+  letter-spacing: 1.33px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+a {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+a:hover,
+a.active {
+  border-bottom: 2px solid #4a4a4a;
+}
+
+.header {
+  background-color: #9edcca;
+  padding: 50px 0;
+}
+
+.nav {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-grow: 2;
+  justify-content: space-between;
+  padding-right: 200px;
+}
+
+.nav-links a {
+  list-style: none;
+}
+
+.nav-info {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.grading-percentages {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.percentage {
+  text-align: center;
+  width: 100px;
+}
+
+.percentage h1 {
+  color: #8ab8c4;
+  font-size: 36px;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.section h2 {
+  display: inline-block;
+  margin-left: 150px;
+  position: relative;
+}
+
+.section h2:after {
+  background-color: #dfa08a;
+  content: "";
+  height: 7px;
+  left: 0;
+  position: absolute;
+  top: 14px;
+  width: 100%;
+  z-index: -1;
+}
+
+.description {
+  margin: 0 auto;
+  width: 500px;
+}
