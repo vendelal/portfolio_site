@@ -1,98 +1,99 @@
-@font-face {
-  font-family: "akkuratbold";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/ufonts.com_akkurat-bold-opentype-webfont.eot");
-  src: url("../fonts/ufonts.com_akkurat-bold-opentype-webfont.eot?#iefix") format("embedded-opentype"),
-  url("../fonts/ufonts.com_akkurat-bold-opentype-webfont.woff2") format("woff2"),
-  url("../fonts/ufonts.com_akkurat-bold-opentype-webfont.woff") format("woff"),
-  url("../fonts/ufonts.com_akkurat-bold-opentype-webfont.ttf") format("truetype"),
-  url("../fonts/ufonts.com_akkurat-bold-opentype-webfont.svg#akkuratbold") format("svg");
-}
-
-@font-face {
-  font-family: "akkurat_lightitalic";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/ufonts.com_akkurat-light-italic-opentype-webfont.eot");
-  src: url("../fonts/ufonts.com_akkurat-light-italic-opentype-webfont.eot?#iefix") format("embedded-opentype"),
-  url("../fonts/ufonts.com_akkurat-light-italic-opentype-webfont.woff2") format("woff2"),
-  url("../fonts/ufonts.com_akkurat-light-italic-opentype-webfont.woff") format("woff"),
-  url("../fonts/ufonts.com_akkurat-light-italic-opentype-webfont.ttf") format("truetype"),
-  url("../fonts/ufonts.com_akkurat-light-italic-opentype-webfont.svg#akkurat_lightitalic") format("svg");
-}
-
-@font-face {
-  font-family: "akkurat_lightregular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/ufonts.com_akkurat-light-opentype-webfont.eot");
-  src: url("../fonts/ufonts.com_akkurat-light-opentype-webfont.eot?#iefix") format("embedded-opentype"),
-  url("../fonts/ufonts.com_akkurat-light-opentype-webfont.woff2") format("woff2"),
-  url("../fonts/ufonts.com_akkurat-light-opentype-webfont.woff") format("woff"),
-  url("../fonts/ufonts.com_akkurat-light-opentype-webfont.ttf") format("truetype"),
-  url("../fonts/ufonts.com_akkurat-light-opentype-webfont.svg#akkurat_lightregular") format("svg");
-}
-
-@font-face {
-  font-family: "akkuratregular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/ufonts.com_akkurat-opentype-webfont.eot");
-  src: url("../fonts/ufonts.com_akkurat-opentype-webfont.eot?#iefix") format("embedded-opentype"),
-  url("../fonts/ufonts.com_akkurat-opentype-webfont.woff2") format("woff2"),
-  url("../fonts/ufonts.com_akkurat-opentype-webfont.woff") format("woff"),
-  url("../fonts/ufonts.com_akkurat-opentype-webfont.ttf") format("truetype"),
-  url("../fonts/ufonts.com_akkurat-opentype-webfont.svg#akkuratregular") format("svg");
-}
-
 body {
-  color: #000;
-  font-family: "akkuratregular";
-  font-size: 15px;
+  color: #4a4a4a;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1em;
   letter-spacing: 0.3px;
-  line-height: 24px;
-}
+  line-height: 1.5em;
 
-.container {
-  margin: 0 auto;
-  max-width: 1000px;
-}
-
-.content {
-  padding: 50px 0;
+  font-smoothing: antialiased;
 }
 
 h1 {
-  font-family: "akkuratbold";
-  font-size: 24px;
-  letter-spacing: 1.33px;
+  font-family: "Ahkio-Regular", serif;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
 h2 {
-  font-size: 18px;
+  font-family: "calibre-light", sans-serif;
+  font-size: 36px;
+  margin: 100px 0 50px;
+}
+
+h2 span {
+  font-family: "Ahkio-regular";
+  margin-right: 15px;
 }
 
 h3 {
   font-size: 15px;
-  font-weight: bold;
-  margin-top: 25px;
+  font-weight: 700;
+  margin: 30px 0 15px;
+}
+
+h4 {
+  font-family: "calibre-light";
+  font-size: 24px;
+  margin: 15px 0 15px 10px;
+}
+
+h5 {
+  font-family: "Ahkio-regular";
+  font-size: 23px;
+}
+
+p {
+  width: 60ch;
 }
 
 a {
-  color: #4a4a4a;
+  color: #fc6163;
   text-decoration: none;
 }
 
 a:hover,
 a.active {
-  border-bottom: 2px solid #4a4a4a;
+  border-bottom: 2px solid #fc6163;
+  color: #fc6163;
+  padding-bottom: 4px;
+}
+
+code {
+  background-color: #f3f3f3;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  color: #9e9e9e;
+  padding: 3px 9px;
+}
+
+.container {
+  margin: 0 auto 200px;
+  max-width: 1000px;
+  position: relative;
 }
 
 .header {
-  background-color: #9edcca;
-  padding: 50px 0;
+  padding: 100px 0 25px;
+}
+
+.site-title::before {
+  color: #fff0f1;
+  content: "Type Tools – ARTG2251";
+  font-size: 72px;
+  left: -300px;
+  position: absolute;
+  top: 115px;
+  z-index: -1;
+}
+
+.site-title-five-d::before {
+  color: #fff0f1;
+  content: "5D Tools – ARTF2224";
+  font-size: 72px;
+  left: -300px;
+  position: absolute;
+  top: 115px;
+  z-index: -1;
 }
 
 .nav {
@@ -106,7 +107,7 @@ a.active {
   display: flex;
   flex-grow: 2;
   justify-content: space-between;
-  padding-right: 200px;
+  padding-right: 300px;
 }
 
 .nav-links a {
@@ -118,43 +119,33 @@ a.active {
   text-align: right;
 }
 
-.grading-percentages {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.percentage {
-  text-align: center;
-  width: 100px;
-}
-
-.percentage h1 {
-  color: #8ab8c4;
-  font-size: 36px;
-}
-
-.section {
-  padding: 40px 0;
-}
-
-.section h2 {
-  display: inline-block;
-  margin-left: 150px;
+.evaluation {
   position: relative;
 }
 
-.section h2:after {
-  background-color: #dfa08a;
-  content: "";
-  height: 7px;
-  left: 0;
+.percentages {
+  background-color: #fb6264;
+  border-radius: 150px;
+  color: #fff;
+  height: 210px;
+  padding: 30px;
   position: absolute;
-  top: 14px;
-  width: 100%;
-  z-index: -1;
+  right: 0;
+  top: 15px;
+  width: 210px;
 }
 
-.description {
-  margin: 0 auto;
-  width: 500px;
+.percentages h4:first-child {
+  margin-top: 50px;
+}
+
+.percentages h4 span {
+  font-family: "Ahkio-regular";
+  font-size: 36px;
+}
+
+.badge {
+  left: -140px;
+  position: absolute;
+  top: 340px;
 }
