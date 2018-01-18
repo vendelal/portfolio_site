@@ -87,6 +87,16 @@ code {
   z-index: -1;
 }
 
+.site-title-five-d::before {
+  color: #fff0f1;
+  content: "5D Tools – ARTF2224";
+  font-size: 72px;
+  left: -300px;
+  position: absolute;
+  top: 115px;
+  z-index: -1;
+}
+
 .nav {
   align-items: flex-start;
   display: flex;
