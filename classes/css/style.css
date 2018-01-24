@@ -59,12 +59,27 @@ a.active {
   padding-bottom: 4px;
 }
 
-code {
+pre {
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 95%;
+  line-height: 140%;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+}
+
+code,
+.code-block {
   background-color: #f3f3f3;
   border: 1px solid #e6e6e6;
   border-radius: 3px;
   color: #9e9e9e;
   padding: 3px 9px;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
 }
 
 .container {
