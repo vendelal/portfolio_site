@@ -59,6 +59,10 @@ a.active {
   padding-bottom: 4px;
 }
 
+em {
+  opacity: 0.5;
+}
+
 pre {
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 95%;
@@ -80,6 +84,17 @@ code,
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
   white-space: -o-pre-wrap;
+  width: fit-content;
+}
+
+.code-block {
+  padding: 15px 20px;
+}
+
+date {
+  opacity: 0.4;
+  font-size: 1.3rem;
+  padding: 0 .75rem;
 }
 
 .container {
@@ -164,4 +179,28 @@ code,
   left: -140px;
   position: absolute;
   top: 340px;
+}
+
+.final-project {
+  background-color: #fff0f1;
+  padding: 50px;
+  margin: 100px 0px 50px -50px;
+}
+
+.final-project h2 {
+  margin-top: 0px;
+  color: #fb6264;
+}
+
+.hover-definition {
+  border-bottom: 1px dashed black;
+  opacity: 0.5;
+}
+
+.hover-show-definition {
+  display: none;
+}
+
+.hover-definition:hover + .hover-show-definition {
+  display: block;
 }
