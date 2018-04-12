@@ -204,3 +204,14 @@ date {
 .hover-definition:hover + .hover-show-definition {
   display: block;
 }
+
+.animation-spin {
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
