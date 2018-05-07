@@ -92,9 +92,9 @@ code,
 }
 
 date {
-  opacity: 0.4;
   font-size: 1.3rem;
-  padding: 0 .75rem;
+  opacity: 0.4;
+  padding: 0 0.75rem;
 }
 
 .container {
@@ -167,7 +167,7 @@ date {
 }
 
 .percentages h4:first-child {
-  margin-top: 50px;
+  margin-top: 75px;
 }
 
 .percentages h4 span {
@@ -183,13 +183,13 @@ date {
 
 .final-project {
   background-color: #fff0f1;
+  margin: 100px 0 50px -50px;
   padding: 50px;
-  margin: 100px 0px 50px -50px;
 }
 
 .final-project h2 {
-  margin-top: 0px;
   color: #fb6264;
+  margin-top: 0;
 }
 
 .hover-definition {
@@ -214,4 +214,28 @@ date {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.class-links-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.class-link {
+  background-color: #f3f3f3;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin: 20px 20px 0 0;
+  padding: 35px 35px 5px;
+  width: 240px;
+}
+
+.class-link:hover {
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.class-link h2 {
+  font-family: "Ahkio-regular";
+  margin: 0;
 }
