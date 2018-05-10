@@ -181,13 +181,14 @@ date {
   top: 340px;
 }
 
-.final-project {
+.highlighted-area {
   background-color: #fff0f1;
   margin: 100px 0 50px -50px;
   padding: 50px;
+  width: 70%;
 }
 
-.final-project h2 {
+.highlighted-area h2 {
   color: #fb6264;
   margin-top: 0;
 }
